@@ -112,17 +112,15 @@ export default function Home() {
     //     </a>
     //   </div>
     // </main>
-    <div>
-      <section className="mt-4 flex flex-col justify-center items-center">
-        <h1 className="-tracking-3 text-5xl my-4 w-4/5 md:w-full leading-snug text-center">
-          Introducing a fun way of reading <span className="mono font-bold text-black">Hacker News</span>
-        </h1>
-        <img className="my-10" src="aihn-logo.png" alt="aihn_logo" />
+    <section className="flex flex-col justify-center items-center">
+      <h1 className="-tracking-3 text-5xl my-4 w-4/5 md:w-full leading-snug text-center">
+        Introducing a fun way of reading <span className="mono font-bold text-black">Hacker News</span>
+      </h1>
+      <img className="my-10" src="aihn-logo.png" alt="aihn_logo" />
 
-        <a className="mb-10 p-4 text-2xl bg-orange-600 rounded-lg text-white font-bold hover:no-underline" href="/feed">Get started</a>
+      <a className="mb-10 p-4 text-2xl bg-orange-600 rounded-lg text-white font-bold hover:no-underline" href="/feed">Get started</a>
 
-        <InfiniteMovingCards items={all_gists} direction="right" speed="slow" />
-      </section>
-    </div>
+      <InfiniteMovingCards items={all_gists} direction="right" speed="slow" />
+    </section>
   );
 }

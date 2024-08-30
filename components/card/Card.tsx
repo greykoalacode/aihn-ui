@@ -8,7 +8,7 @@ const Card : React.FC<CardComponentProps> = ({ gist }) => {
     const { summary, categories, themes } = gist;
     return (
         <section>
-            <div className="relative w-[350px] max-w-full bg-white overflow-hidden shadow-xl">
+            <div className="relative w-[350px] max-w-full bg-white overflow-hidden shadow hover:shadow-lg">
                 <header className="card-header text-2xl font-semibold">
                     <p className="my-2">
                         <span

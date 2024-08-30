@@ -26,7 +26,10 @@ export default function RootLayout({
       </head> */}
       <body className={`${firaMono.variable} ${dmSans.variable}`}>
         <NavBar />
-        {children}</body>
+        <div className="mt-24">
+        {children}
+        </div>
+        </body>
     </html>
   );
 }
