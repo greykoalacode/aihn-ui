@@ -1,6 +1,14 @@
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+export const getFormattedDate = (date: Date) => {
+	let hours = date.getHours() < 10 ? '0'+date.getHours() : date.getHours();
+	let minutes = date.getMinutes() < 10 ? '0'+date.getMinutes() : date.getMinutes();
+    return [`${date.getDate()} ${months[date.getMonth()].slice(0,3)}`,`${hours}:${minutes}`];
+}
+
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
 }

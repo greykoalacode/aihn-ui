@@ -9,7 +9,7 @@ const Card : React.FC<CardComponentProps> = ({ gist }) => {
     return (
         <section>
             <div className="relative w-[350px] max-w-full bg-white overflow-hidden shadow hover:shadow-lg">
-                <header className="card-header text-2xl font-semibold">
+                <header className="card-header text-xl sm:text-2xl font-semibold">
                     <p className="my-2">
                         <span
                             className="mr-2 text-base text-orange-500 font-bold px-2 p-1 rounded-md bg-orange-100 tracking-wider"
@@ -19,7 +19,7 @@ const Card : React.FC<CardComponentProps> = ({ gist }) => {
                 </header>
                 <section className="p-4">
                     <p className="font-bold">tl;dr</p>
-                    <p className="text-lg">{summary}</p>
+                    <p className="text-md sm:text-lg">{summary}</p>
                     <div className="my-2">
                         <p className="font-bold">Categories</p>
                         <div className="my-2">
